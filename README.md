@@ -14,7 +14,7 @@ The upstream project offers a GUI, but it is proprietary and paid. This project 
 
 - Linux
 - Python 3
-- `PyQt5` (Install via `pip install PyQt5` or `sudo apt install python3-pyqt5`)
+- `PyQt5` (Install via `pip install PyQt5` or `sudo dnf install python3-qt5` or `sudo apt install python3-pyqt5`)
 - `gpclient` ([GlobalProtect-openconnect](https://github.com/yuezk/GlobalProtect-openconnect)) installed.
 
 ## Installation
@@ -22,7 +22,7 @@ The upstream project offers a GUI, but it is proprietary and paid. This project 
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/mwdle/GlobalProtect-Tray.git](https://github.com/mwdle/GlobalProtect-Tray.git)
+   git clone https://github.com/mwdle/GlobalProtectTray.git
    cd GlobalProtect-Tray
    ```
 
@@ -35,7 +35,7 @@ The upstream project offers a GUI, but it is proprietary and paid. This project 
 The script will prompt you for:
 
 - **VPN Portal Hostname** (e.g., `vpn.example.com`)
-- **SAML Browser** (e.g., `chrome`, `firefox`, or `default`)
+- **SAML Browser** (e.g., `chrome`, `firefox`, `default` for default system browser, or leave blank to use embedded browser)
 - **OpenSSL Legacy Fix** (enable if encountering issues with legacy servers)
 
 > **Note on Permissions:** The installer runs `sudo` to add a file to `/etc/sudoers.d/`.
