@@ -18,8 +18,9 @@ def main():
 
     def disconnect():
         gp_process.blockSignals(True)
-        gp_process.kill()
         QProcess.startDetached("sudo", ["-E", gp, "disconnect"])
+        if not gp_process.waitForFinished(2500):
+            gp_process.kill()
         app.quit()
 
     gp_process.setProcessChannelMode(QProcess.MergedChannels)
