@@ -48,4 +48,4 @@ Search for **GlobalProtect VPN** in your application launcher. The app will star
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
